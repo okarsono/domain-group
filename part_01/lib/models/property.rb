@@ -15,4 +15,8 @@ class Property
     @latitude = latitude
     @longitude = longitude
   end
+
+  def full_address(delimiter: "\n")
+    [name, address, "#{latitude}, #{longitude}", "Agency code: #{agency_code}"].join(delimiter)
+  end
 end
