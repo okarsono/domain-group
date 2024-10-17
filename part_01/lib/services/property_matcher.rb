@@ -5,7 +5,6 @@ class PropertyMatcher
   # @param [Property] database_property
   # @return [Boolean]
   def self.is_match(agency_property, database_property)
-    property_matcher = PropertyMatcherFactory.for(agency_property, database_property)
-    property_matcher.match?
+    PropertyMatcherFactory.for(agency_property, database_property).match?
   end
 end

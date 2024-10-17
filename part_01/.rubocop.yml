@@ -1,6 +1,9 @@
 AllCops:
   TargetRubyVersion: 3.0
 
+Metrics/BlockLength:
+  Exclude: [spec/**/*.rb]
+
 Naming/PredicateName:
   Exclude: ["lib/services/property_matcher.rb"]
 
