@@ -1,6 +1,9 @@
 AllCops:
   TargetRubyVersion: 3.0
 
+Naming/PredicateName:
+  Exclude: ["lib/services/property_matcher.rb"]
+
 Style/Documentation:
   Enabled: false
 

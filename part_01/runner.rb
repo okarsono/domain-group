@@ -3,9 +3,7 @@
 require_relative "lib/loader"
 
 db_property = Property.new("addr1", nil, "nama", 100, 50)
-agency_property = Property.new("addr1", "OTBRE", "nama", 100, 50)
 agency_property = Property.new("addr1", "LRE", "nama", 100, 50)
-
 
 puts "Helloworld"
 

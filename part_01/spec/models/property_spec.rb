@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 RSpec.describe Property, type: :model do
-  let(:instance_attributes) { %w(address agency_code name latitude longitude) }
+  let(:instance_attributes) { %w[address agency_code name latitude longitude] }
 
   subject { described_class.new(*instance_attributes) }
 
   it "has all necessary attributes" do
-    %i(name agency_code address latitude longitude).each do |attribute|
+    %i[name agency_code address latitude longitude].each do |attribute|
       expect(subject.respond_to?(attribute)).to be_truthy
     end
   end
